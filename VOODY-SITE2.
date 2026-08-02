@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOODY AUXLIO</title>
+
+<style>
+body{
+    margin:0;
+    background:#0d1117;
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    color:white;
+}
+
+.card{
+    width:360px;
+    background:#151b23;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 0 25px rgba(0,120,255,.35);
+}
+
+.avatar{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    display:block;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:#5aa8ff;
+}
+
+.btn{
+    width:100%;
+    border:none;
+    padding:16px;
+    border-radius:12px;
+    margin-top:20px;
+    background:#2979ff;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.item{
+    background:#202734;
+    padding:14px;
+    border-radius:12px;
+    margin-top:15px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.switch{
+    width:45px;
+    height:24px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<img class="avatar" src="avatar.png">
+
+<h1>VOODY AUXLIO</h1>
+
+<div class="item">
+<span>Modo Performance</span>
+<input type="checkbox" class="switch">
+</div>
+
+<div class="item">
+<span>60 FPS</span>
+<input type="checkbox" class="switch">
+</div>
+
+<div class="item">
+<span>Gráficos HD</span>
+<input type="checkbox" class="switch">
+</div>
+
+<button class="btn" id="openGame">
+ABRIR FREE FIRE
+</button>
+
+</div>
+
+<script>
+document.getElementById("openGame").onclick = () => {
+    window.location.href = "freefire://";
+};
+</script>
+
+</body>
+</html>
